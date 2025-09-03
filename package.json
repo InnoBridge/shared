@@ -1,5 +1,5 @@
 {
-  "name": "shared",
+  "name": "@innobridge/shared",
   "version": "0.0.1",
   "description": "Share code across the organization.",
   "author": "yilengyao <innobridgetechnology@gmail.com>",
