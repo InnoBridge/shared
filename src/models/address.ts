@@ -4,6 +4,7 @@ type LatLng = {
 };
 
 interface Address {
+    id: string;            // internal ID
     placeId: string;           // place_id (for Google Places)
     name?: string;             // place name / establishment name (use instead of formatted address)
     unitNumber?: string;       // Unit, suite or apartment (subpremise)
