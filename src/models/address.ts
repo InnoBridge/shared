@@ -22,6 +22,7 @@ interface Address extends BaseAddress {
 };
 
 export {
+    BaseAddress,
     Address,
     LatLng
 };
