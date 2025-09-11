@@ -18,7 +18,7 @@ interface BaseAddress {
 // Backend storage representation of an address
 interface Address extends BaseAddress {
     id: string;                // internal ID
-    userId?: string;           // user ID (if associated with a user)
+    userId: string;           // user ID (if associated with a user)
 };
 
 export {
