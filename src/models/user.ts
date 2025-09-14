@@ -6,7 +6,7 @@ interface User {
   username: string | null;
   firstName: string | null;
   lastName: string | null;
-  imageUrl: string;
+  imageUrl: string | null;
   emailAddresses: EmailAddress[];
   phoneNumber: string | null;
   languages: string[];
