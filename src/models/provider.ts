@@ -10,5 +10,5 @@ export interface Provider extends User {
   serviceRadius: number;
   canVisitClientHome: boolean;
   virtualHelpOffered: boolean;
-  businessName?: string | null;
+  businessName?: string;
 }
