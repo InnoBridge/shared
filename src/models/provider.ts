@@ -10,12 +10,10 @@ import { ProviderAddress } from "@/models/address";
 // - virtualHelpOffered (required): boolean
 // - businessName (optional): string
 export interface Provider extends Omit<User, 
-  'userId' 
-  | 'username'
+  'username'
   | 'emailAddresses'
   | 'address'
   > {
-  providerId: string;
   providerName: string | null;
   emailAddresses: ProviderEmailAddress[];
   address?: ProviderAddress;
