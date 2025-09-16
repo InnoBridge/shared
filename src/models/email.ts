@@ -4,6 +4,11 @@ interface EmailAddress {
   emailAddress: string;
 };
 
+interface ProviderEmailAddress extends Omit<EmailAddress, 'userId'> {
+  providerId?: string;
+}
+
 export {
-    EmailAddress
+    EmailAddress,
+    ProviderEmailAddress
 };
