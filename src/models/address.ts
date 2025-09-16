@@ -1,3 +1,5 @@
+import { B } from "vitest/dist/chunks/worker.d.CHGSOG0s.js";
+
 type LatLng = {
     lat: number;
     lng: number;
@@ -21,8 +23,14 @@ interface Address extends BaseAddress {
     userId: string;           // user ID (if associated with a user)
 };
 
+interface ProviderAddress extends BaseAddress {
+    id: string;                // internal ID
+    providerId: string;        // provider ID (if associated with a provider)
+};
+
 export {
     BaseAddress,
     Address,
+    ProviderAddress,
     LatLng
 };
