@@ -1,16 +1,16 @@
-import { ProviderEmailAddress } from "@/models/email";
-import { ProviderAddress } from "@/models/address";
+import { EmailAddress } from "@/models/email";
+import { Address } from "@/models/address";
 
 interface User {
   id: string;
-  providername: string | null;
+  username: string | null;
   firstName: string | null;
   lastName: string | null;
   imageUrl: string | null;
-  emailAddresses: ProviderEmailAddress[];
+  emailAddresses: EmailAddress[];
   phoneNumber: string | null;
   languages: string[];
-  address?: ProviderAddress;
+  address?: Address;
   passwordEnabled: boolean;
   twoFactorEnabled: boolean;
   backupCodeEnabled: boolean;
